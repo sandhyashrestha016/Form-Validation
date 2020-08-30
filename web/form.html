@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Form</title>
+
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    
+    <div class="container">
+      <div class="header">
+        <h2>Fill up the form</h2>
+      </div>
+      
+      <form class="form" id="form" action="form.php" method="post">
+        <div class="form-control">
+          <label>Email</label>
+          <input type="text" placeholder="Email" id="email" name="email" />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label>Full Name</label>
+          <input type="text" placeholder="name" id="name" name="name" />
+          <small>Error message</small>
+        </div>
+  
+        <div class="gen">
+          <label>Gender</label><br>
+          <input type="radio" name="gender" id ="m" value ="Male">Male</input >
+          <input type="radio" name="gender" id="f" value="Female">Female</input >
+          <input type="radio" name="gender" id="o" value="Others">Others</input ><br>
+
+          <small>Error message</small>
+        </div>
+
+<div class="gen">
+  <label>1. Do you have fever?</label><br>
+  <input type="radio" name="option1" id ="a1" value ="Yes1">Yes</input >
+  <input type="radio" name="option1" id="a2" value="No1">No</input ><br>
+  <small>Error message</small>
+</div>
+
+<div class="gen">
+ <label >2. Do you have dry cough?</label><br>
+ <input type="radio" name="option2" id ="b1" value ="Yes2">Yes</input>
+ <input type="radio" name="option2"  id ="b2" value="No2">No</input><br>
+ <small>Error message</small>
+</div>
+
+<div class="gen">
+<label >3. Do you feel tiredness?</label><br>
+<input type="radio" name="option3"  id ="c1" value ="Yes3">Yes</input>
+<input type="radio" name="option3" id ="c2" value="No3">No</input><br>
+<small>Error message</small>
+</div>
+
+<div class="gen">
+<label >4. Do you have aches and pains?</label><br>
+<input type="radio" name="option4" id ="d1" value ="Yes4">Yes</input>
+<input type="radio" name="option4" id ="d2" value="No4">No</input><br>
+<small>Error message</small>
+</div>
+
+<div class="gen">
+<label >5. Do you have sore throat?</label><br>
+<input type="radio" name="option5"  id ="e1" value ="Yes5">Yes</input>
+<input type="radio" name="option5"  id ="e2" value="No5">No</input><br>
+<small>Error message</small>
+</div>
+
+<div class="gen">
+<label >6. Do you have diarrhoea?</label><br>
+<input type="radio" name="option6"  id ="f1" value ="Yes6">Yes</input>
+<input type="radio" name="option6" id ="f2" value="No6">No</input><br>
+<small>Error message</small>
+</div>
+
+<div class="gen">
+<label >7. Do you have headache?</label><br>
+<input type="radio" name="option7"  id ="g1" value ="Yes7">Yes</input>
+<input type="radio" name="option7" id ="g2" value="No7">No</input><br>
+<small>Error message</small>
+</div>
+
+<div class="gen">
+<label >8. Do you have loss of taste or smell?</label><br>
+<input type="radio" name="option8"  id ="h1" value ="Yes8">Yes</input>
+<input type="radio" name="option8" id ="h2" value="No8">No</input><br>
+<small>Error message</small>
+</div>
+
+<div class="gen">
+<label >9. Do you have a rash on skin or discolouration of fingers or toes?</label><br>
+<input type="radio" name="option9"  id ="i1" value ="Yes9">Yes</input>
+<input type="radio" name="option9" id ="i2" value="No9">No</input><br>
+<small>Error message</small>
+</div>
+
+<div class="gen">
+<label >10. Do you feel difficulty in breathing or shortness of breath?</label><br>
+<input type="radio" name="option10"  id ="j1" value ="Yes10">Yes</input>
+<input type="radio" name="option10" id ="j2" value="No10">No</input><br>
+<small>Error message</small>
+</div>
+
+<div class="gen">
+<label >11. Do you feel chest pain or pressure?</label><br>
+<input type="radio" name="option11"  id ="k1" value ="Yes11">Yes</input>
+<input type="radio" name="option11" id ="k2" value="No11">No</input><br>
+<small>Error message</small>
+</div>
+
+<div class="gen">
+<label >12. Do you feel loss of speech or movement?</label><br>
+<input type="radio" name="option12" id ="l1" value ="Yes12">Yes</input>
+<input type="radio" name="option12" id ="l2" value="No12">No</input><br>
+<small>Error message</small>
+</div>
+<input type="submit" onclick="checkInput();" class="submit" value="submit"></input>
+
+      </form>
+    </div>
+    <script type="text/javascript" src="form.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </body>
+</html>
